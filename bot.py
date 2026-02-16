@@ -68,7 +68,7 @@ async def f_cv(update: Update, context: ContextTypes.DEFAULT_TYPE):
             document=document.file_id,
             caption=caption
         )
-        await update.message.reply_text("Ma'lumotlaringiz qabul qilindi va guruhga yuborildi.")
+        await update.message.reply_text("Ma'lumotlaringiz qabul qilindi.")
     except Exception as e:
         logging.error(f"Error sending message: {e}")
         await update.message.reply_text(f"Xatolik yuz berdi: {e}")
